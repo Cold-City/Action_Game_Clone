@@ -8,6 +8,7 @@ keyDown = keyboard_check(ord("S"))
 //Input
 inputDirection = point_direction(0,0, keyRight - keyLeft, keyDown - keyUp)
 inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0)
+var lastInputDirection = 0
 
 //Movement
 xvelocity = lengthdir_x(inputMagnitude * walkSpeed, inputDirection)
@@ -25,12 +26,37 @@ y += yvelocity
 
 #endregion
 
-face = round(inputDirection/90)
-if face == 4 face =0
+if (inputMagnitude) {
+    lastInputDirection = inputDirection;
+}
+centerY = y + centerYOffset
+aimDir = point_direction(x, centerY, mouse_x, mouse_y)
 
-if xvelocity == 0 && yvelocity == 0 {
-	image_index = 0
+//Sprite Control
+#region
+image_speed = 1
+if xvelocity !=0 image_xscale = sign(xvelocity)
+if xvelocity != 0 {
+		sprite_index = sPlayerWalk
+		/*if !audio_is_playing(sdStep) {
+			audio_play_sound(sdStep,1,false)
+		}*/
+	} else {
+		sprite_index = sPlayerIdle
+	}
+/*if (xvelocity == 0 && yvelocity == 0) {
+    // Use lastInputDirection to set the sprite's orientation when the player stops moving
+    face = round(lastInputDirection / 90);
+    if (face == 4) face = 0;
+    sprite_index = sprite[face];
+} else {
+    // Normal behavior when moving
+    face = round(inputDirection / 90);
+    if (face == 4) face = 0;
+    sprite_index = sprite[face];
 }
 mask_index = sprite[3]
+depth = -bbox_bottom
+*/
+#endregion
 
-sprite_index = sprite[face]

@@ -1,7 +1,7 @@
 spd = 5
 
 next_time_I_think -=1
-switch state {
+/*switch state {
 	case EnemyState.Idle:
 	if point_distance(x,y,oPlayer.x,oPlayer.y)<close {
 		state = EnemyState.Chasing
@@ -39,8 +39,19 @@ switch state {
 	_bull.speed = 20
 	break;
 }
+*/
 
-
+if place_meeting(x,y,oBullet) && !invicible {
+	takeDamage()
+	invicible = true
+}
+if(invicible) { 
+	invicible_timer++;
+	if(invicible_timer > invicible_duration) {
+		invicible = false;
+		invicible_timer = 0;
+	}
+}
 
 
 

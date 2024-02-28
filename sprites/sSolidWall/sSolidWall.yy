@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sSolidWall",
-  "bbox_bottom": 15,
+  "bbox_bottom": 80,
   "bbox_left": 0,
-  "bbox_right": 15,
+  "bbox_right": 61,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c5364413-69ad-48fc-ba73-2a35d0499ada",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cd2bfd87-bbc5-497c-a660-7115fd120c0f",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 16,
+  "height": 82,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"950911b2-e662-439b-a933-93a23e812a37","blendMode":0,"displayName":"default","isLocked":false,"opacity":55.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7e0f2888-5033-4820-bc74-444641e71855","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c5364413-69ad-48fc-ba73-2a35d0499ada","path":"sprites/sSolidWall/sSolidWall.yy",},},},"Disabled":false,"id":"a62d26eb-ea9d-472b-a9b0-7503dcfc4979","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cd2bfd87-bbc5-497c-a660-7115fd120c0f","path":"sprites/sSolidWall/sSolidWall.yy",},},},"Disabled":false,"id":"6b9a87d9-e13e-4815-b0f1-93a71ed7511c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 16,
+  "width": 63,
 }
