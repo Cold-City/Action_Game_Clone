@@ -32,6 +32,9 @@
     "name": "sPlayer",
     "path": "sprites/sPlayer/sPlayer.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sPlayerDown",
+    "path": "sprites/sPlayerDown/sPlayerDown.yy",
+  },
   "visible": true,
 }

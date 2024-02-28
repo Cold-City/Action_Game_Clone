@@ -28,4 +28,9 @@ y += yvelocity
 face = round(inputDirection/90)
 if face == 4 face =0
 
+if xvelocity == 0 && yvelocity == 0 {
+	image_index = 0
+}
+mask_index = sprite[3]
+
 sprite_index = sprite[face]
