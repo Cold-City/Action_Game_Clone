@@ -50,6 +50,8 @@ if xvelocity != 0 && gothit = false {
 
 if place_meeting(x,y,oEnemyBullet) {
 	gothit = true
+	hit_point-=1
+	show_debug_message(hit_point)
 	sprite_index = sPlayerGotHit
 	var bullet = instance_place(x, y, oEnemyBullet);
 	if (bullet != noone) {
@@ -77,4 +79,10 @@ if (knockback_speed > 0) {
 }
 if !audio_group_is_loaded(audiogroup_default) {
 	audio_group_load(audiogroup_default)
+}
+if hit_point < 1 {
+	instance_create_layer(x,y,"Instances",oPlayerCorpse)
+	instance_destroy()
+	instance_destroy(player_gun)
+	
 }
