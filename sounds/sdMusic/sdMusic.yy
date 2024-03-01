@@ -8,7 +8,7 @@
   },
   "bitDepth": 1,
   "bitRate": 128,
-  "compression": 0,
+  "compression": 2,
   "conversionMode": 0,
   "duration": 224.0,
   "parent": {
@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "sdMusic.mp3",
   "type": 0,
-  "volume": 0.29,
+  "volume": 0.1,
 }

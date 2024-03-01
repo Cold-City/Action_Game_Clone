@@ -17,7 +17,10 @@ shake_remain = max(0, shake_remain-((1/shake_length)*shake_magnitude))
 
 camera_set_view_pos(view_camera[0], x, y)
 
-
+if keyboard_check(vk_space) && !(audio_play_sound(sdMusic,1,true)){
+	audio_play_sound(sdMusic,1,true)
+	room_goto_next()
+}
 
 
 

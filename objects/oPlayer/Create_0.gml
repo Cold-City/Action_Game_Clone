@@ -15,4 +15,6 @@ knockback_direction = 0;
 
 player_gun = instance_create_depth(x,y,depth,oGun)
 
-audio_play_sound(sdMusic,1,true)
+if !audio_group_is_loaded(audiogroup_default) {
+	audio_group_load(audiogroup_default)
+}

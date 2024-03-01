@@ -16,6 +16,11 @@ if mouse_check_button(mb_left) && allow_shoot {
 	var effect_y = player_y + lengthdir_y(irandom_range(20,30), angle_to_cursor);
 	var bullet = instance_create_depth(effect_x, effect_y,depth,oBullet)
 	var effect_instance = instance_create_layer(effect_x, effect_y, "Effects", oExplode);
+	var decal = instance_create_depth(x, y, depth, oPlayerBulletDecal)
+	with decal {
+		direction = random(360)
+		knockback_speed = 10
+	}
 	effect_instance.direction = angle_to_cursor;
 	effect_instance.image_angle = angle_to_cursor;
 	audio_play_sound(sdPlayerShoot,1,false)

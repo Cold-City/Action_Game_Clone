@@ -7,3 +7,4 @@ function screenshake(_magnitude,_frame){
 		}
 	}
 }
+

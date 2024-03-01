@@ -27,6 +27,8 @@
     {"name":"sDeco","order":17,"path":"sprites/sDeco/sDeco.yy",},
     {"name":"sPlayerIdle","order":12,"path":"sprites/sPlayerIdle/sPlayerIdle.yy",},
     {"name":"oWall","order":3,"path":"objects/oWall/oWall.yy",},
+    {"name":"oPlayerBulletDecal","order":11,"path":"objects/oPlayerBulletDecal/oPlayerBulletDecal.yy",},
+    {"name":"sPlayerBulletDecal","order":21,"path":"sprites/sPlayerBulletDecal/sPlayerBulletDecal.yy",},
     {"name":"sEnemyWalk","order":15,"path":"sprites/sEnemyWalk/sEnemyWalk.yy",},
     {"name":"oCamera","order":8,"path":"objects/oCamera/oCamera.yy",},
     {"name":"oEnemyBullet","order":7,"path":"objects/oEnemyBullet/oEnemyBullet.yy",},
@@ -34,6 +36,7 @@
     {"name":"oSolidWall","order":4,"path":"objects/oSolidWall/oSolidWall.yy",},
     {"name":"sPlayerGotHit","order":20,"path":"sprites/sPlayerGotHit/sPlayerGotHit.yy",},
     {"name":"oEnemyCorpse","order":10,"path":"objects/oEnemyCorpse/oEnemyCorpse.yy",},
+    {"name":"sEnemyBulletDecal","order":22,"path":"sprites/sEnemyBulletDecal/sEnemyBulletDecal.yy",},
     {"name":"sEnemyCorpse","order":19,"path":"sprites/sEnemyCorpse/sEnemyCorpse.yy",},
     {"name":"oExplode","order":9,"path":"objects/oExplode/oExplode.yy",},
     {"name":"sdMusic","order":3,"path":"sounds/sdMusic/sdMusic.yy",},
@@ -47,5 +50,6 @@
     {"name":"sdBulletHitWall","order":2,"path":"sounds/sdBulletHitWall/sdBulletHitWall.yy",},
     {"name":"sSolidWall","order":4,"path":"sprites/sSolidWall/sSolidWall.yy",},
     {"name":"sEnemyBullet","order":11,"path":"sprites/sEnemyBullet/sEnemyBullet.yy",},
+    {"name":"oEnemyBulletDecal","order":12,"path":"objects/oEnemyBulletDecal/oEnemyBulletDecal.yy",},
   ],
 }
