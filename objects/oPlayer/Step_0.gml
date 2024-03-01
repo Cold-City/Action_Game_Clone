@@ -44,19 +44,6 @@ if xvelocity != 0 {
 	} else {
 		sprite_index = sPlayerIdle
 	}
-/*if (xvelocity == 0 && yvelocity == 0) {
-    // Use lastInputDirection to set the sprite's orientation when the player stops moving
-    face = round(lastInputDirection / 90);
-    if (face == 4) face = 0;
-    sprite_index = sprite[face];
-} else {
-    // Normal behavior when moving
-    face = round(inputDirection / 90);
-    if (face == 4) face = 0;
-    sprite_index = sprite[face];
-}
-mask_index = sprite[3]
-depth = -bbox_bottom
-*/
+
 #endregion
 

@@ -5,7 +5,13 @@ _angle = point_direction(x,y,oPlayer.x,oPlayer.y)
 image_angle = _angle
 
 if(allow_shoot == true){
-	var _enemy_bullet = instance_create_layer(x, y, "Instances", oEnemyBullet);
+	var effect_x = x + lengthdir_x(30, _angle);
+	var effect_y = y + lengthdir_y(30, _angle);
+	var _enemy_bullet = instance_create_layer(effect_x, effect_y, "Instances", oEnemyBullet);
+	var effect_instance = instance_create_layer(effect_x, effect_y, "Effects", oExplode);
+	effect_instance.direction = _angle;
+	effect_instance.image_angle = _angle;
+	audio_play_sound(sdEnemyShoot,1,false)
 	with(_enemy_bullet){
 		speed = 2;
 		direction = point_direction(x,y,oPlayer.x,oPlayer.y); 
