@@ -55,7 +55,7 @@ if (knockback_speed > 0) {
     y += lengthdir_y(knockback_speed, knockback_direction);
 
     // Gradually reduce the knockback speed to simulate friction or resistance
-    knockback_speed -= 1; // Adjust this value to control how quickly the knockback effect fades
+    knockback_speed -= 1; 
 
     // Prevent knockback speed from becoming negative
     if (knockback_speed < 0) {

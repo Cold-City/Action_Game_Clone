@@ -6,7 +6,6 @@ if place_meeting(x,y,oSolidWall) {
 if place_meeting(x,y, oPlayer) {
 	audio_play_sound(sdBulletHitWall,1,false)
 	screenshake(4,20)
-	alarm[0] = 1
 }
 
 

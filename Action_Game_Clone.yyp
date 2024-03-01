@@ -54,6 +54,7 @@
     {"id":{"name":"oEnemyCorpse","path":"objects/oEnemyCorpse/oEnemyCorpse.yy",},},
     {"id":{"name":"sEnemyCorpse","path":"sprites/sEnemyCorpse/sEnemyCorpse.yy",},},
     {"id":{"name":"oExplode","path":"objects/oExplode/oExplode.yy",},},
+    {"id":{"name":"sdMusic","path":"sounds/sdMusic/sdMusic.yy",},},
     {"id":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},},
     {"id":{"name":"oGun","path":"objects/oGun/oGun.yy",},},
     {"id":{"name":"oEnemyGun","path":"objects/oEnemyGun/oEnemyGun.yy",},},

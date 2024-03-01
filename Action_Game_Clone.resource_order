@@ -36,6 +36,7 @@
     {"name":"oEnemyCorpse","order":10,"path":"objects/oEnemyCorpse/oEnemyCorpse.yy",},
     {"name":"sEnemyCorpse","order":19,"path":"sprites/sEnemyCorpse/sEnemyCorpse.yy",},
     {"name":"oExplode","order":9,"path":"objects/oExplode/oExplode.yy",},
+    {"name":"sdMusic","order":3,"path":"sounds/sdMusic/sdMusic.yy",},
     {"name":"oBullet","order":2,"path":"objects/oBullet/oBullet.yy",},
     {"name":"oGun","order":5,"path":"objects/oGun/oGun.yy",},
     {"name":"oEnemyGun","order":6,"path":"objects/oEnemyGun/oEnemyGun.yy",},

@@ -47,8 +47,31 @@ if xvelocity != 0 && gothit = false {
 
 #endregion
 
+
 if place_meeting(x,y,oEnemyBullet) {
 	gothit = true
 	sprite_index = sPlayerGotHit
+	var bullet = instance_place(x, y, oEnemyBullet);
+	if (bullet != noone) {
+		    // Collision detected, now apply knockback
+			knockback_speed = 5;
+		    knockback_direction = point_direction(bullet.x, bullet.y, x, y);
+
+		}
+	instance_destroy(bullet)
 	alarm[0] = 20	
+}
+if (knockback_speed > 0) {
+    // Apply movement in the knockback direction
+    x += lengthdir_x(knockback_speed, knockback_direction);
+    y += lengthdir_y(knockback_speed, knockback_direction);
+
+    // Gradually reduce the knockback speed to simulate friction or resistance
+    knockback_speed -= 1; 
+
+    // Prevent knockback speed from becoming negative
+    if (knockback_speed < 0) {
+        knockback_speed = 0;
+		
+    }
 }
