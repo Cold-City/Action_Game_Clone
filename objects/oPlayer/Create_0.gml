@@ -9,6 +9,7 @@ inputDirection = 0
 aimDir = 0
 face = 3
 
+gothit = false
 
 player_gun = instance_create_depth(x,y,depth,oGun)
 

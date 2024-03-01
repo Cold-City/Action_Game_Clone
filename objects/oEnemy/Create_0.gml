@@ -10,6 +10,9 @@ far = 300
 next_time_I_think = 5
 
 hit_point = 2
+knockback_speed = 0;
+knockback_direction = 0;
+
 gun = instance_create_layer(x,y,"Instances",oEnemyGun)
 gun.owner = id
 function takeDamage() {
@@ -19,26 +22,28 @@ function takeDamage() {
 		var bullet = instance_place(x, y, oBullet);
 		if (bullet != noone) {
 		    // Collision detected, now apply knockback
-		    var knockback_distance = 10; // Adjust as needed
-		    var direction_to_knockback = point_direction(bullet.x, bullet.y, x, y);
+			knockback_speed = 10;
+		    knockback_direction = point_direction(bullet.x, bullet.y, x, y);
+		    var hit_by_bullet_id = bullet.bullet_id; 
 
-		    // Move the enemy away from the bullet's position
-		    x += lengthdir_x(knockback_distance, direction_to_knockback);
-		    y += lengthdir_y(knockback_distance, direction_to_knockback);
-
-		    // Optionally, access the bullet's id or any specific variable
-		    var hit_by_bullet_id = bullet.bullet_id; // Assuming you have a bullet_id variable in your bullet
-
-		    // You can now use hit_by_bullet_id to know which bullet hit the enemy
 		}
 	}
 	else {
+		var bullet = instance_place(x, y, oBullet);
+		if (bullet != noone) {
+		    // Collision detected, now apply knockback
+			knockback_speed = 10;
+		    knockback_direction = point_direction(bullet.x, bullet.y, x, y);
+		    var hit_by_bullet_id = bullet.bullet_id; 
+
+		}
+		instance_create_layer(x,y,"Instances",oEnemyCorpse)
 		instance_destroy()
 		instance_destroy(gun)
-		instance_create_layer(x,y,"Instances",oEnemyCorpse)
 	}
 }
 alarm[0] = room_speed * 3;
 invicible = false;
 invicible_timer = 0;
 invicible_duration = 20;
+gothit = false

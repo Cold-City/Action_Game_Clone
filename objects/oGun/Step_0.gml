@@ -11,6 +11,7 @@ var cursor_y = mouse_y;
 var angle_to_cursor = point_direction(player_x, player_y, cursor_x, cursor_y);
 if mouse_check_button(mb_left) && allow_shoot {
 	show_debug_message("shoot")
+	screenshake(2,20)
 	var effect_x = player_x + lengthdir_x(30, angle_to_cursor);
 	var effect_y = player_y + lengthdir_y(irandom_range(20,30), angle_to_cursor);
 	var bullet = instance_create_depth(effect_x, effect_y,depth,oBullet)
@@ -20,7 +21,7 @@ if mouse_check_button(mb_left) && allow_shoot {
 	audio_play_sound(sdPlayerShoot,1,false)
 	with bullet {
 		direction = point_direction(x,y,mouse_x,mouse_y)
-		speed = 6
+		speed = 5
 		image_angle = direction
 	}
 	allow_shoot = false

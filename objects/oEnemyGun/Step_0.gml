@@ -13,7 +13,7 @@ if(allow_shoot == true){
 	effect_instance.image_angle = _angle;
 	audio_play_sound(sdEnemyShoot,1,false)
 	with(_enemy_bullet){
-		speed = 2;
+		speed = 1;
 		direction = point_direction(x,y,oPlayer.x,oPlayer.y); 
 		image_angle = direction
 		}
