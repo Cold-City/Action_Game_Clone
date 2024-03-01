@@ -70,6 +70,7 @@
     {"id":{"name":"sGroundTiles","path":"sprites/sGroundTiles/sGroundTiles.yy",},},
     {"id":{"name":"sdBulletHitWall","path":"sounds/sdBulletHitWall/sdBulletHitWall.yy",},},
     {"id":{"name":"oPlayerCorpse","path":"objects/oPlayerCorpse/oPlayerCorpse.yy",},},
+    {"id":{"name":"fn_game","path":"fonts/fn_game/fn_game.yy",},},
     {"id":{"name":"functions","path":"scripts/functions/functions.yy",},},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},},
     {"id":{"name":"sSolidWall","path":"sprites/sSolidWall/sSolidWall.yy",},},

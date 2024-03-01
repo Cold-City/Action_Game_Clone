@@ -65,8 +65,13 @@ if place_meeting(x,y,oEnemyBullet) {
 }
 if (knockback_speed > 0) {
     // Apply movement in the knockback direction
-    x += lengthdir_x(knockback_speed, knockback_direction);
-    y += lengthdir_y(knockback_speed, knockback_direction);
+    if !place_meeting(x,y, oWall){
+		x += lengthdir_x(knockback_speed, knockback_direction);
+		y += lengthdir_y(knockback_speed, knockback_direction);
+	}else if place_meeting(x,y,oWall) {
+		x -= lengthdir_x(knockback_speed, knockback_direction);
+		y -= lengthdir_y(knockback_speed, knockback_direction);
+	}
 
     // Gradually reduce the knockback speed to simulate friction or resistance
     knockback_speed -= 1; 
@@ -82,6 +87,7 @@ if !audio_group_is_loaded(audiogroup_default) {
 }
 if hit_point < 1 {
 	instance_create_layer(x,y,"Instances",oPlayerCorpse)
+	instance_create_layer(x,y,"Instances",oDeathScreen)
 	instance_destroy()
 	instance_destroy(player_gun)
 	
